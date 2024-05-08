@@ -28,8 +28,8 @@ class _GradientColorTryState extends State<GradientColorTry> {
               decoration: const BoxDecoration(
                 gradient: LinearGradient(
                   colors: [
-                    Color.fromARGB(246, 161, 60, 60),
-                    Color.fromARGB(246, 192, 68, 40),
+                    Color.fromARGB(246, 221, 83, 14),
+                    Color.fromARGB(239, 241, 55, 13),
                   ],
                   begin: Alignment.topRight,
                   end: Alignment.bottomLeft,
@@ -39,7 +39,7 @@ class _GradientColorTryState extends State<GradientColorTry> {
                 'Colour Combination',
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 15,
+                  fontSize: 18,
                 ),
               ),
             ),
