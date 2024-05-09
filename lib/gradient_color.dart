@@ -10,42 +10,33 @@ class GradientColorTry extends StatefulWidget {
 class _GradientColorTryState extends State<GradientColorTry> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Color Combition',
+    return Container(
+        alignment: Alignment.center,
+        decoration: const BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color.fromARGB(246, 221, 83, 14),
+              Color.fromARGB(239, 241, 55, 13),
+            ],
+            begin: Alignment.topRight,
+            end: Alignment.bottomLeft,
+          ),
         ),
-        centerTitle: true,
-      ),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Center(
-            child: Container(
-              height: 150,
-              width: 200,
-              alignment: Alignment.center,
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  colors: [
-                    Color.fromARGB(246, 221, 83, 14),
-                    Color.fromARGB(239, 241, 55, 13),
-                  ],
-                  begin: Alignment.topRight,
-                  end: Alignment.bottomLeft,
-                ),
+        child: Center(
+          child: Column(
+            children: [
+              Image.asset(
+                'assets/images/dice-3.png',
+                width: 200,
               ),
-              child: const Text(
-                'Colour Combination',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              ),
-            ),
-          )
-        ],
-      ),
-    );
+              TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Roll Dice',
+                    style: TextStyle(color: Colors.yellowAccent),
+                  ))
+            ],
+          ),
+        ));
   }
 }
